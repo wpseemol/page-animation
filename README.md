@@ -12,4 +12,6 @@ Today I explore new animation library name <mark>GSAP</mark>.
 <hr/>
 
 -   When link component change path stop default propagation.
--   Now ready animation
+-   Now ready animation.
+
+-   Same animation wark when use layout.
