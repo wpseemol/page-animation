@@ -1,7 +1,9 @@
 export default function ContactPage() {
     return (
         <main>
-            <p>this is contact page</p>
+            <h2 className="text-3xl font-semibold text-center mt-5">
+                Welcome to Contact Page
+            </h2>
         </main>
     );
 }
