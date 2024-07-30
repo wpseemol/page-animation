@@ -1,15 +1,22 @@
 'use client';
 
 import { animationPageIn } from '@/utils/animation';
+import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 
-export default function Template({ children }: { children: React.ReactNode }) {
+export default function TemplateWpseemol({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
+    const pathName = usePathname();
+
     useEffect(() => {
         animationPageIn();
-    }, []);
+    }, [pathName]);
 
     return (
-        <div>
+        <>
             <div
                 id="banner-1"
                 className="min-h-screen bg-neutral-900 z-10 fixed top-0 left-0 w-1/4"></div>
@@ -24,6 +31,6 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 className="min-h-screen bg-neutral-900 z-10 fixed top-0 left-3/4 w-1/4"></div>
 
             {children}
-        </div>
+        </>
     );
 }

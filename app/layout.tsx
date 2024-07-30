@@ -1,4 +1,5 @@
 import NavbarElement from '@/components/navbar';
+import TemplateWpseemol from '@/components/template';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -18,9 +19,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
-                <NavbarElement />
-
-                {children}
+                <TemplateWpseemol>
+                    <NavbarElement />
+                    {children}
+                </TemplateWpseemol>
             </body>
         </html>
     );

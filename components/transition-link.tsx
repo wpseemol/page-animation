@@ -8,7 +8,7 @@ export default function TransitionLink({ href, label }: Props) {
     const router = useRouter();
     const pathName = usePathname();
 
-    const handelClick = (
+    const handelClick = async (
         e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
     ) => {
         e.preventDefault();

@@ -14,7 +14,7 @@ export function animationPageIn() {
             yPercent: 0,
         }).to([bannerOne, bannerTwo, bannerThree, bannerFour], {
             yPercent: 100,
-            stagger: 0.2,
+            stagger: 0.15,
         });
     }
 }
@@ -32,7 +32,7 @@ export function animatePageOut(href: string, router: AppRouterInstance) {
             yPercent: -100,
         }).to([bannerOne, bannerTwo, bannerThree, bannerFour], {
             yPercent: 0,
-            stagger: 0.2,
+            stagger: 0.15,
             onComplete: () => {
                 router.push(href);
             },
